@@ -1,16 +1,37 @@
-### Site Settings ###
-title: portfolYOU
-description: >-
-  I turn coffee :coffee: into code,
-  use tabs over spaces
-  and never broke production.
-baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository: Nilavan/Nilavan.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme: YoussefRaafatNasry/portfolYOU
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-### Plugins ###
+title: Nilavan Akilan
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+repository: Nilavan/Nilavan.github.io
+
+# Build settings
+remote_theme: YoussefRaafatNasry/portfolYOU
 plugins:
-  - jemoji
+  #  - jemoji
+  - jekyll-feed
 
 ### Navbar Settings ###
 nav_exclude: # The following paths are excluded from navbar
@@ -18,29 +39,14 @@ nav_exclude: # The following paths are excluded from navbar
   - pages/404.html
   - pages/index.md
 
-### Author Info ###
 author:
-  name: John Doe
+  name: Nilavan
   image: https://i.imgur.com/uyDNQnn.jpg
-  behance: your_username
+  # behance: your_username
   # dribbble          : your_username
-  email: username@domain.com
-  facebook: your_username
-  github: your_username
-  # gitlab            : your_username
-  # instagram         : your_username
-  # kaggle            : your_username
-  linkedin: your_username
-  medium: your_username
-  # soundcloud        : your_username
-  # spotify           : your_username
-  # stackoverflow     : your_user_id
-  # tumblr            : your_username.tumblr.com
-  # twitch            : your_username
-  twitter: your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
-# keybase           : your_username
+  email: nilavanakilan2001@gmail.com
+  # facebook: your_username
+  github: Nilavan
 
 ### Posts ###
 permalink: /blog/:title
@@ -50,16 +56,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus # Your website Shortname on disqus
-
-### Analytics ###
-analytics:
-  enabled: false # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
 
 ### Defaults for collections ###
 defaults:
@@ -74,9 +70,22 @@ defaults:
     values:
       comments: false # Set to true to enable disqus comments
 
-### Exclude from processing ###
-exclude:
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - "*.log"
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
