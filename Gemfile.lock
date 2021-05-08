@@ -273,7 +273,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 214)
-  jekyll-feed (~> 0.12)
+  jemoji (~> 0.8)
   minima (~> 2.5)
   portfolyou-jekyll-theme
   tzinfo (~> 1.2)
