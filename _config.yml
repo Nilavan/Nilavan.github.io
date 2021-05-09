@@ -20,9 +20,7 @@
 
 title: Nilavan Akilan
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores amet quibusdam nobis modi facilis quae?
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: Nilavan/Nilavan.github.io
@@ -41,12 +39,14 @@ nav_exclude: # The following paths are excluded from navbar
 
 author:
   name: Nilavan
-  #image: https://i.imgur.com/uyDNQnn.jpg
+  image: /assets/img/profile.jpg
   # behance: your_username
   # dribbble          : your_username
   email: nilavanakilan2001@gmail.com
   # facebook: your_username
   github: Nilavan
+  instagram: nilavan.akilan
+  kaggle: nilavanakilan
 
 ### Posts ###
 permalink: /blog/:title
@@ -56,6 +56,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+
+### Analytics ###
+analytics:
+  enabled: false # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
 
 ### Defaults for collections ###
 defaults:
