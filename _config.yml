@@ -29,7 +29,7 @@ repository: Nilavan/Nilavan.github.io
 remote_theme: YoussefRaafatNasry/portfolYOU
 plugins:
   #  - jemoji
-  - jekyll-feed
+  #  - jekyll-feed
 
 ### Navbar Settings ###
 nav_exclude: # The following paths are excluded from navbar
