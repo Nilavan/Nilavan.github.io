@@ -1,0 +1,77 @@
+<!-- Thank you page by https://codepen.io/Grett/pen/byvRZq -->
+
+<html lang="en">
+  <head>
+    {% assign title = page.title | default: site.title | escape %} {% assign
+    description = page.description | default: site.description | strip_html |
+    strip_newlines | truncate: 160 %} {% if page.name and page.collection ==
+    'projects' %} {% assign title = page.name | escape %} {% endif %}
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ '/assets/favicon.ico' | relative_url }}"
+    />
+
+    <!-- Theme style -->
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+
+    <style>
+      @import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+      @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css"
+    />
+    <script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+    <script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <h1 class="site-header__title" data-lead-id="site-header-title">
+        THANK YOU!
+      </h1>
+    </header>
+
+    <div class="main-content">
+      <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+      <p class="main-content__body" data-lead-id="main-content-body">
+        We will be in touch soon!
+      </p>
+      <br />
+      <a class="btn btn-outline-primary mt-1" href="{{ site.baseurl }}/"
+        >Go Back Home</a
+      >
+    </div>
+  </body>
+</html>
