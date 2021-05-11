@@ -1501,6 +1501,7 @@ body {
 
 .button-round {
   border-radius: 50%;
+  font-size: large;
 }
 
 [data-theme="light"] .navbar {
