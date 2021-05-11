@@ -1498,4 +1498,8 @@ body {
 [data-theme="dark"] .timeline-body .timeline-item:after {
   background-color: #17191a;
 }
+
+.button-round {
+  border-radius: 50%;
+}
 @import "portfolYOU";

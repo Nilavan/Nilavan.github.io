@@ -1,15 +1,73 @@
 <div class="row justify-content-center align-items-center p-4">
   <div class="col-lg-4 col-md-6 text-center mt-4">
-
     <!-- Fine Circle Responsive Image -->
     <div id="container" class="my-2">
       <div id="dummy"></div>
       <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        <img
+          src="{{ site.author.image }}"
+          alt="{{ site.title }}"
+          class="circle-image wow animated zoomIn"
+          data-wow-delay=".1s"
+        />
       </div>
     </div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">
+      {{ site.description }}
+    </p>
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">
+      <a
+        class="btn btn-outline-primary button-round mt-5"
+        href="#featured-projects"
+        >⬇</a
+      >
+    </p>
   </div>
 </div>
+<section id="featured-projects">
+  <div class="card-columns m-3 mt-5">
+    <br />
+    <h2>Featured projects</h2>
+    <br />
+    <!-- Local Projects -->
+    {% for project in site.projects %} {%- if project.tools[-1] == "featured"
+    -%} {%- assign project_type = "local" -%} {%- assign project_id =
+    project.name | slugify -%} {%- assign project_img = project.image -%} {%-
+    assign project_name = project.name -%} {%- assign project_desc =
+    project.description -%} {%- assign project_tools = project.tools -%} {%- if
+    project.external_url -%} {%- assign project_url = project.external_url -%}
+    {%- else -%} {%- assign project_url = project.url | relative_url -%} {%-
+    endif -%} {% include projects/project-card.html %} {%- endif -%} {% endfor
+    %}
+  </div>
+</section>
+<br />
+<section id="skills">
+  <div>
+    <h2>Skills</h2>
+    <br />
+    {% include about/skills.html title="Programming Skills"
+    source=site.data.programming-skills %}
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a").on("click", function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
+  });
+</script>
