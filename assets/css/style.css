@@ -1502,4 +1502,15 @@ body {
 .button-round {
   border-radius: 50%;
 }
+
+[data-theme="light"] .navbar {
+  transition: ease;
+  background: #fff;
+}
+
+[data-theme="dark"] .navbar {
+  transition: ease;
+  background: #0e0e0e;
+}
+
 @import "portfolYOU";
