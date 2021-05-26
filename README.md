@@ -4,3 +4,8 @@
 
 🚧 Work in progress
 
+<br>
+<br>
+<div align="center">
+  <img src="screenshot.gif">
+</div>
