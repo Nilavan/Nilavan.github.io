@@ -1,9 +1,7 @@
 ### Site Settings ###
 title: Nilavan Akilan
 description: >-
-  I turn coffee ☕ into code,
-  use tabs over spaces
-  and never broke production.
+  There's no perfection. Only evolution.
 baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository: Nilavan/Nilavan.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 
