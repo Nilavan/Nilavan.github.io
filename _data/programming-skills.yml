@@ -3,17 +3,17 @@
   color: danger
 
 - name: C
-  percentage: 80
+  percentage: 90
   color:
 
 - name: C++
   percentage: 80
   color: success
-  
+
 - name: Java
-  percentage: 40
+  percentage: 60
   color: info
-  
+
 - name: HTML5/CSS3
   percentage: 70
   color: secondary
