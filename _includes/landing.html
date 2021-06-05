@@ -27,7 +27,7 @@
 </div>
 <section id="featured-projects">
   <div class="m-3">
-    <br /><br /><br /><br />
+    <br /><br /><br />
     <h2>Featured projects</h2>
   </div>
   <div class="card-columns m-3 mt-4">
@@ -42,6 +42,9 @@
     endif -%} {% include projects/project-card.html %} {%- endif -%} {% endfor
     %}
   </div>
+  <p class="text-center">
+    {% include elements/button.html link="/projects" text="See all" %}
+  </p>
 </section>
 <br />
 <section id="skills">
