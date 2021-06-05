@@ -26,11 +26,11 @@
   </div>
 </div>
 <section id="featured-projects">
-  <br />
-  <div class="card-columns m-3 mt-5">
-    <br />
+  <div class="m-3">
+    <br /><br /><br /><br />
     <h2>Featured projects</h2>
-    <br />
+  </div>
+  <div class="card-columns m-3 mt-4">
     <!-- Local Projects -->
     {% for project in site.projects %} {%- if project.tools[-1] == "featured"
     -%} {%- assign project_type = "local" -%} {%- assign project_id =
