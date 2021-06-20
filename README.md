@@ -1,4 +1,9 @@
-<h1 align="center"><a href="https://nilavan.github.io/"><img width=80 src="assets/favicon.ico"></a></h1>
+<div align="center">
+<a href="https://nilavan.github.io/">
+<img width=100 src="assets/android-chrome-512x512.png"/>
+</a>
+<h1>nilavan.github.io</h1>
+</div><br>
 
 🚧 Work in progress
 
