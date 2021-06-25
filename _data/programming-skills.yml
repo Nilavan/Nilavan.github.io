@@ -7,13 +7,13 @@
   color:
 
 - name: C++
-  percentage: 80
+  percentage: 90
   color: success
 
 - name: Java
-  percentage: 60
+  percentage: 70
   color: info
 
 - name: HTML5/CSS3
-  percentage: 70
+  percentage: 80
   color: secondary

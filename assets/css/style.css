@@ -1514,4 +1514,9 @@ body {
   background: #0e0e0e;
 }
 
+::selection {
+  color: #000000;
+  background: #00ced1;
+}
+
 @import "portfolYOU";
