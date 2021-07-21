@@ -5,11 +5,6 @@ permalink: /about/
 weight: 3
 ---
 
-```
-🚧 This site's still under construction and there's a lot more coming soon.
-Until then, feel free to check out other parts of this website.
-```
-
 # **About Me**
 
 ---
