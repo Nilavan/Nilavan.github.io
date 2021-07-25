@@ -1519,4 +1519,10 @@ body {
   background: #00ced1;
 }
 
+#canvas {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+}
+
 @import "portfolYOU";
