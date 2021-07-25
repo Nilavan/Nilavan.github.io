@@ -18,7 +18,7 @@
     </p>
     <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">
       <a
-        class="btn btn-outline-primary button-round mt-5"
+        class="btn btn-outline-primary button-round m-4"
         href="#featured-projects"
         >▼</a
       >
@@ -113,7 +113,7 @@
       };
 
       this.ghosts = [];
-      this.numberOfGhosts = Math.round((this.width + this.height) / 300);
+      this.numberOfGhosts = Math.round((this.width + this.height) / 400);
 
       //Resize listener for the canvas to fill browser window dynamically
       window.addEventListener("resize", () => this.resizeCanvas(), false);
@@ -127,7 +127,7 @@
     resizeCanvas() {
       this.width = this.canvas.width = window.innerWidth;
       this.height = this.canvas.height = window.innerHeight;
-      this.numberOfGhosts = Math.round((this.width + this.height) / 300);
+      this.numberOfGhosts = Math.round((this.width + this.height) / 400);
 
       //Empty the previous container and fill it again with new Ghost objects
       this.ghosts = [];
