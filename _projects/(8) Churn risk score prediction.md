@@ -1,7 +1,7 @@
 ---
 name: <i class='fab fa-github' data-toggle='tooltip' data-placement='bottom' data-delay='250'></i> |&nbsp;HackerEarth ML challenge - Churn risk score prediction
 tools: [churn prediction, machine learning]
-image: https://miro.medium.com/max/750/1*8_Md5Ns2OKeW9F8XRRCMKg.jpeg
+image: ../assets/img/churn.jpg
 description:
   Predicting the churn score for each customer on a website based on<br>
   - User demographic information<br>
