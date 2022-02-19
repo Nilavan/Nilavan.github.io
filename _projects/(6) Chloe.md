@@ -1,6 +1,6 @@
 ---
 name: Chloe - Personal finance assistant
-tools: [personal finance, chatbot, featured]
+tools: [personal finance, chatbot]
 image: ../assets/img/chloe.png
 description: A personal finance management app with an AI powered assistant designed to help educate the user towards financial independence.
 ---
