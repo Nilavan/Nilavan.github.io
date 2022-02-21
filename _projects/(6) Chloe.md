@@ -14,6 +14,13 @@ description: A personal finance management app with an AI powered assistant desi
 {% include elements/button.html link="https://github.com/ajith-m-doodlebug/Chloe" text="GitHub" size="lg"%}
 </h2>
 <br>
+
+> 🌏 Team:
+>
+> - Ajith Manivannan <a class='fab fa-linkedin' data-toggle='tooltip' data-placement='bottom' data-delay='250' href='https://www.linkedin.com/in/ajith-m-doodlebug/'>
+> - A Nilavan
+
+<br>
 <h5>
 Managing personal finances isn’t the easiest thing to do. Sometimes it can feel overwhelming. Small expenses may seem irrelevant at the time but can add up to a great part of your budget. A leading cause of poor money management is due to the lack of financial knowledge. For some strange reason, schools don't teach financial literacy skills. Yet, these are critical for proper financial planning.
 <br><br>
