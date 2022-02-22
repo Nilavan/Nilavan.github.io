@@ -22,8 +22,9 @@ description: A web app to detect COVID-19 and Pneumonia from Chest X-Ray images 
    3. [Prediction of COVID-19 results](#results)
    4. [Probability](#probability)
    5. [Patient database](#db)
-4. [Links](#links)
-5. [Team](#team)
+4. [Architecture](#architecture)
+5. [Links](#links)
+6. [Team](#team)
 
 <div class="m-3" id="background">
     <br />
@@ -102,6 +103,32 @@ It includes the probability of the result. Depending on the images, this model a
 
 This application also includes a complete database of the patient which contains the patient's details history. This aids the doctors in inspecting the patient’s condition depending on their history, thus taking necessary precautions.
 
+<div class="m-3" id="architecture">
+    <br />
+    <h2>🏙 Architecture:</h2>
+</div>
+
+<div class="mermaid" align='center'>
+flowchart LR
+subgraph models
+B[VGG16 \n weights = imagenet]
+C[DenseNet201 \n weights = imagenet]
+end
+subgraph layer1
+D[Concatenate] --> E[AvgPooling2D] --> F[Flatten]
+end
+subgraph layer2
+G[Dense 128] --> H[Relu]
+end
+subgraph layer3
+I[Dense 64] --> J[Relu] --> K[Dropout 0.5]
+end
+subgraph layer4
+L[Dense 3] --> M[Softmax]
+end
+A[Chest X-Ray] --> B & C --> layer1 --> layer2 --> layer3 --> layer4 --> Output
+</div>
+
 <div class="m-3" id="links">
     <br />
     <h2>🚀 Links:</h2>
@@ -118,6 +145,6 @@ This application also includes a complete database of the patient which contains
     <h2>🌏 Team:</h2>
 </div>
 
-- Vaishalee R <a class='fab fa-linkedin' data-toggle='tooltip' data-placement='bottom' data-delay='250' href='https://www.linkedin.com/in/nilavan-akilan/'>
+- Vaishalee R
 - A Nilavan
-- Pallavi Manasa <a class='fab fa-linkedin' data-toggle='tooltip' data-placement='bottom' data-delay='250' href='https://www.linkedin.com/in/nilavan-akilan/'>
+- Pallavi Manasa <a class='fab fa-linkedin' data-toggle='tooltip' data-placement='bottom' data-delay='250' href='https://www.linkedin.com/in/pallavi-mokkarala-054883204'>

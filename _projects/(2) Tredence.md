@@ -1,9 +1,11 @@
 ---
 name: Tredence - Ode To Code
-tools: [Machinehack, featured]
+tools: [Machinehack, Optuna, featured]
 image: ../assets/img/Tredence.jpg
 description: Predicting Weather Using Alien Fruit Properties.
 ---
+
+> [Competition](https://machinehack.com/hackathon/odetocode_predicting_weather_using_alien_fruit_properties/overview) by [Analytics India Magazine](https://analyticsindiamag.com/) and [Tredence](https://www.tredence.com/) on MachineHack.
 
 ## Contents:
 
@@ -21,24 +23,7 @@ description: Predicting Weather Using Alien Fruit Properties.
     <h2>👋 Introduction:</h2>
 </div>
 
-Competitions with tabular datasets are always fun.
-I've been focusing on Computer Vision with [RespAI](https://nilavan.github.io/projects/4-respai) and
-[Petfinder on kaggle](https://www.kaggle.com/nilavanakilan/petfinder-swin-svr-fastai-w-yolo) and this competition came as a pleasent
-surprise. I entered it as an escape/distraction from computer
-vision but that soon changed as I found myself working on it for
-hours together. The data presented here isn't
-real world and clearly human-made, with clean rows and a seemingly
-careful input of NaNs into specific columns. I spent most of my
-time figuring out methods to fill these NaNs with model predictions
-being the solution I went with finally. As beginner-friendly
-as it was, it did help me learn a great deal. This was the first
-time I explored hyperparameter tuning libraries (apart from
-sklearn's Random search and grid search) and stuck with Optuna.
-Classical Machine Learning models aside, I took
-a Neural Network apporach as well. Of course, my final submission
-was an ensemble of pretty much all the models I
-succesfully evaluated. Below I note down the info and details about
-the competition and my approach towards it.
+Competitions with tabular datasets are always fun. I've been focusing on Computer Vision with [RespAI](/projects/4-respai) and the [Petfinder competition](https://www.kaggle.com/nilavanakilan/petfinder-swin-svr-fastai-w-yolo) and this competition came as a pleasant surprise. I entered it as an escape/distraction from computer vision but that soon changed as I found myself working on it for hours together. The data presented here isn't real world and clearly human-made, with clean rows and a seemingly careful input of NaNs into specific columns. I spent most of my time figuring out methods to fill these NaNs with model predictions being the solution I went with finally. As beginner-friendly as it was, it did help me learn a great deal. This was the first time I explored hyperparameter tuning libraries (apart from sklearn's random search and grid search) and stuck with Optuna. Classical Machine Learning models aside, I took a Neural Network approach as well. Of course, my final submission was an ensemble of pretty much all the models I successfully evaluated. Below, I note down the info and details about the competition and my approach towards it.
 
 <div class="m-3" id="problem">
     <br />
@@ -88,7 +73,7 @@ Ensemble of the following models:
 - Neural network (Architecture below)
 
 <div class="mermaid" align='center'>
-flowchart LR;
+flowchart LR
 
 subgraph layer1
 direction TB
