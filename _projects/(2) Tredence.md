@@ -113,7 +113,7 @@ layer4 --> L[Output]
 - Stratified 5 fold cross validation
 - Binning using Rice rule
 - Hyperparameter tuning ML models using Optuna:
-  - RandomForest: {'n_estimators': 597, 'criterion': 'gini'
+  - RandomForest: {'n_estimators': 597, 'criterion': 'gini'}
   - CatBoost: {'n_estimators': 1170, 'learning_rate': 0.0631377357362828, 'max_depth': 14, task_type:’GPU’}
 
 <br />
@@ -127,7 +127,7 @@ layer4 --> L[Output]
 
 <div class="m-3" id="result">
     <br />
-    <h4>🎯 Results:</h4>
+    <h2>🎯 Results:</h2>
 </div>
 
 - Final score: 0.51913
