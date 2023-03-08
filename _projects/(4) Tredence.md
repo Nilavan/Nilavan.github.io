@@ -1,6 +1,6 @@
 ---
 name: Tredence - Ode To Code
-tools: [Machinehack, Optuna, featured]
+tools: [Machinehack, Optuna]
 image: ../assets/img/Tredence.jpg
 description: Predicting Weather Using Alien Fruit Properties.
 ---

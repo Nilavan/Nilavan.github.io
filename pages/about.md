@@ -11,7 +11,7 @@ weight: 3
 
 Hi, I'm **Nila ☾**.
 
-I'm a third year CSE-Data Science student at VIT Vellore.<br>
+I'm a pre-final year CSE-Data Science student at VIT Vellore.<br>
 As a result of my perpetual curiosity, I have practical experience with a wide range of technologies including:
 
 Python • C/C++ • Java • HTML • CSS • MySQL • MongoDB • Scikit-Learn • NLTK • Pandas • Numpy • TensorFlow • Keras • Matlab • R

@@ -1,8 +1,16 @@
+- title: Computer Vision Intern, Sentics GmbH
+  from: June 2022
+  to: December 2022
+  description: • Developed an algorithm that accurately estimated the base point of an object using pose keypoint data from TRTPose and their 2D-3D correspondence, resulting in a 100% improvement in the accuracy of object location estimation.<br><br>• Conducted extensive research and experimentation with various object and keypoint tracking methods and presented detailed findings and recommendations to the team, providing valuable insights and contributing to the project's success.
 - title: Computer Vision Intern, Artenal
   from: September 2021
   to: December 2021
-  description: Working on a real-time apple detection system as part of the Auto-Labelling team.
-- title: Student, VIT Vellore
+  description: • Collected and annotated videos of clients' farms to use as training and validation data for a real-time apple detection and classification system.<br><br>• Trained and tested multiple deep learning models to identify the most effective approach for apple detection and successfully applied the ResNet50 model for disease classification in apples.
+- title: Student, Vellore Institute of Technology
   from: 2019
   to: 2024
-  description: Earning an Mtech (int) in CSE with specialization in Data Science.
+  description: Earning an integrated MTech in CSE with specialization in Data Science.
+- title: Research Intern, Chennai Mathematical Institute
+  from: May 2018
+  to: May 2018
+  description: • Collaborated with professors and students to conduct research and identify problems in the fields of Number Theory and Combinatorics.<br><br>• Developed innovative solutions to these problems by applying mathematical and computational techniques.

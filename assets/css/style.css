@@ -248,10 +248,12 @@
 }
 html {
   padding-left: calc(100vw - 100%);
+  height: 100%;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100%;
 }
 
 .badge {
@@ -455,7 +457,7 @@ body {
   content: "";
   display: block;
   height: 0.15em;
-  background: #007bff;
+  background: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221));
 }
 
 .nav-link::after,
@@ -498,14 +500,13 @@ body {
 
 .timeline-body {
   position: relative;
-  border-radius: 0 15px 15px 0;
   padding: 5px 0;
 }
 .timeline-body:after {
   content: "";
   width: 4px;
   height: 100%;
-  background-color: #007bff;
+  background-color: #29d6cd;
   position: absolute;
   left: -4px;
   top: 0;
@@ -518,7 +519,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 4px solid #007bff;
+  border: 4px solid #29d6cd;
   background-color: #f8f9fa;
   position: absolute;
   left: -12px;
@@ -526,9 +527,12 @@ body {
   z-index: 10;
 }
 .timeline-body .timeline-item .content {
-  margin: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px dashed #343a40;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221)) 1;
 }
 .timeline-body .timeline-item .content .date {
   margin-top: -5px;
@@ -1034,7 +1038,7 @@ body {
   /* Comment */ /* Error */ /* Escape */ /* Generic */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Other */ /* Punctuation */ /* Comment.Hashbang */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.PreprocFile */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Bin */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Affix */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Delimiter */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Function.Magic */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Name.Variable.Magic */ /* Literal.Number.Integer.Long */
 }
 [data-theme="dark"] body {
-  background-color: #0e0e0e;
+  background-color: #000000;
   color: rgba(255, 255, 255, 0.9);
 }
 [data-theme="dark"] .highlight .hll,
@@ -1496,7 +1500,7 @@ body {
   text-decoration: none;
 }
 [data-theme="dark"] .timeline-body .timeline-item:after {
-  background-color: #17191a;
+  background-color: #101010;
 }
 
 .button-round {
@@ -1511,12 +1515,7 @@ body {
 
 [data-theme="dark"] .navbar {
   transition: ease;
-  background: #0e0e0e;
-}
-
-::selection {
-  color: #000000;
-  background: #00ced1;
+  background: #000000;
 }
 
 /*
@@ -1538,5 +1537,55 @@ canvas {
   width: 100%;
   height: 100%;
 }
+
+#hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading {
+  font-size: 10vw;
+  font-weight: bolder;
+}
+
+[data-theme="light"] #heading {
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] #heading {
+  text-shadow: -0.08em 0.03em 0.12em rgba(255, 255, 255, 0.7);
+}
+
+#subtitle {
+  font-size: 3vw;
+  font-weight: 800;
+  margin-top: -0.5em;
+}
+
+#hello {
+  font-weight: bolder;
+  max-width: fit-content;
+  background: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* .hr-lines{
+  position: relative;
+  max-width: 100vw;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221));
+  display: block;
+  margin-top: 0.5rem;
+} */
 
 @import "portfolYOU";
