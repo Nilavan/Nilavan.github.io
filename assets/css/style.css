@@ -531,8 +531,17 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 40px;
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221)) 1;
+  padding-bottom:5px;
+  background: 
+    linear-gradient(
+      to right, 
+      rgb(3, 161, 224), 
+      rgb(0, 255, 221)
+    )
+    left 
+    bottom 
+    no-repeat;
+    background-size:100% 2px ;
 }
 .timeline-body .timeline-item .content .date {
   margin-top: -5px;
