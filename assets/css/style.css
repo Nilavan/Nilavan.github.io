@@ -1583,18 +1583,4 @@ canvas {
   -webkit-background-clip: text;
 }
 
-/* .hr-lines{
-  position: relative;
-  max-width: 100vw;
-}
-
-.hr-lines:after{
-  content:" ";
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(to right, rgb(3, 161, 224), rgb(0, 255, 221));
-  display: block;
-  margin-top: 0.5rem;
-} */
-
 @import "portfolYOU";

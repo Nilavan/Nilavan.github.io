@@ -6,7 +6,7 @@ description: A voice and gesture based app for the visually impaired.
 ---
 
 <h1 align="center">
-  Seemore
+  Seemore <a href="https://github.com/Nilavan/seemore" class="btn btn-outline-success button-round sm" target="_blank"><i class='fab fa-github'></i> </a>
 </h1>
 
 <p align="center">An app to make the lives of visually impaired people a little more ordinary.</p>

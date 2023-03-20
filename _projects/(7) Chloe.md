@@ -10,8 +10,7 @@ description: A personal finance management app with an AI powered assistant desi
 </h1><br>
 
 <h2 align="center">
-{% include elements/button.html link="https://drive.google.com/file/d/10kCtgSKkYPyO3zmtDGCsD6WpJqgjnBSS/view?usp=sharing" text="Download" style="success" size="lg" %}
-{% include elements/button.html link="https://github.com/ajith-m-doodlebug/Chloe" text="GitHub" size="lg"%}
+<a href="https://github.com/ajith-m-doodlebug/Chloe" class="btn btn-outline-primary lg" target="_blank"><i class='fab fa-github'></i>&nbsp;Source Code</a>
 </h2>
 <br>
 
@@ -21,12 +20,12 @@ description: A personal finance management app with an AI powered assistant desi
 > - A Nilavan
 
 <br>
-<h5>
+<p>
 Managing personal finances isn’t the easiest thing to do. Sometimes it can feel overwhelming. Small expenses may seem irrelevant at the time but can add up to a great part of your budget. A leading cause of poor money management is due to the lack of financial knowledge. For some strange reason, schools don't teach financial literacy skills. Yet, these are critical for proper financial planning.
 <br><br>
 This easy to use app intends to help solve this problem by keeping track of the user’s expenses. Chloe is an AI powered personal financial assistant residing in the app, designed to help educate the user towards financial independence.
 
-</h5>
+</p>
 <br>
 
 |                                                                                               |                                           Prototype                                           |                                                                                               |
