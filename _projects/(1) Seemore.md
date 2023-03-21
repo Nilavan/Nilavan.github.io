@@ -11,22 +11,23 @@ description: A voice and gesture based app for the visually impaired.
 
 <p align="center">An app to make the lives of visually impaired people a little more ordinary.</p>
 
-<p align="center">
-  <a href="#introduction">Introduction</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#application-structure">Application Structure</a> •
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#contributors">Contributors</a> •
-  <a href="#license">License</a>
-</p>
-
 ---
+
+1. [Introduction](#introduction)
+2. [Problem Statement](#problem-statement)
+3. [Our Solution](#our-solution)
+4. [Key Features](#key-features)
+5. [Application Workflow](#application-workflow)
+6. [Credits](#credits)
+7. [Future Work](#future-work)
+8. [Contributors](#contributors)
+9. [References](#references)
+10. [License](#license)
 
 <div align="center">
 <img src="../assets/img/seemore_2.png" alt="App">
 </div>
+<br>
 
 ## Introduction
 
@@ -34,66 +35,93 @@ The development of tools and technology hasn't resulted in the development of ap
 
 This app enables the community of blind and visually impaired people to correctly identify objects they come across in everyday life without the need for sighted assistance.
 
-## Installation
+<br>
 
-Install with pip:
+## Problem Statement
 
-```
-$ pip install -r requirements.txt
-```
+Vision impairment poses an enormous global financial burden with the annual global costs of productivity losses associated with vision impairment estimated to be US$ 411 billion.
+The main challenges faced by blind people include
 
-## Application Structure
+- Navigating around places
+- Finding reading material
 
-```
-.
-seemore/
-├─ Frontend/
-├─ calibration/
-│  ├─ Ref_image.png
-├─ currency_model/
-│  ├─ bovw_codebook_600.pickle
-│  ├─ rfclassifier_600.sav
-├─ yolo_v5/
-│  ├─ yolov5s.onnx
-│  ├─ classes.txt
-├─ app.py
-├─ currencydet.py
-├─ objdet.py
-├─ requirements.txt
-├─ .gitignore
-├─ Procfile
-├─ LICENSE
-```
+<br>
+
+## Our Solution
+
+A voice and gesture based app to make the lives of visually impaired people a little more ordinary. This app essentially helps in gaining independence without having to rely on external devices that may not be accessible to most people.
+
+All the features are accessible via swipe/hold gestures and voice commands. Simply say "seemore" followed by the feature you want to access to activate. The app uses speech to notify the results to the users.
+
+<br>
 
 ## Key Features
 
-⭐️ SOS - Quickly send alerts to your emergency contacts.
+<br>
 
-⭐️ Object detection - Detects the object in front of you and the distance you are from it.
+#### ⭐️ SOS - Quickly send alerts to your emergency contacts.
 
-⭐️ Currency detection - Detects currecny denominations.
+<br>
 
-⭐️ Read text - Reads the text for you.
+Quickly send alerts to your emergency contacts by touch and hold gesture on the center of the app or by using the “SOS” command.
 
-## How To Use
+The app uses the Twilio API to send an SMS to emergency contacts to indicate that immediate help is required.
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Flutter](https://flutter.dev/).
+> Implemented by [@N Lirajkhanna](https://github.com/N-liraj-khanna)
 
-From your command line:
+<br>
 
-```bash
-# Clone this repository
-$ git clone https://github.com/Nilavan/seemore
+#### ⭐️ Object Detection - Detects the object in front of you and the distance you are from it.
 
-# Go into the repository
-$ cd seemore
+<br>
 
-# Install dependencies
-$ pip install -r requirements.txt
+Swipe right or use the command “detect object” to detect the object in front of you and find the distance you are from the object.
 
-# Run the app
-$ flask run
-```
+- **v1:** The app uses the yolov3-tiny model for object detection which has a tested mean average precision of 33.1 with 220 fps.
+
+- **v2:** The app uses the yolov5s model for object detection. This has resulted in greater improvement in object detection accuracy and speed.
+
+We use simple camera calibration to calculate the distance between the user and the object detected. With the current version of the app, we can detect up to 80 different everyday objects.
+
+> Implemented by [@Nilavan](https://github.com/Nilavan)
+
+<br>
+
+#### ⭐️ Currency Detection - Detects currecny denominations.
+
+<br>
+
+Swipe left or use the command “currency” to detect currency denominations.
+
+- **v1:** The app uses feature matching from openCV and was trained on limited data due to time constraints.
+
+> Implemented by [@N Lirajkhanna](https://github.com/N-liraj-khanna)
+
+- **v2:** The app uses feature extraction methods from openCV which are used as input to a Machine Learning model, trained on a much larger dataset and optimized to achieve an accuracy of over 90%.
+
+> Implemented by [@Nilavan](https://github.com/Nilavan)
+
+<br>
+
+#### ⭐️ Read Text - Reads the text for you.
+
+<br>
+
+Swipe up or use the command “read text” to read the detected text.
+
+This has been implemented using an optical character recognition (OCR) tool that will recognize and read the text embedded in images.
+
+> Implemented by [@TM Vishnu Mukundan](https://github.com/calicartels)
+
+<br>
+
+## Application Workflow
+
+<div align="center">
+<img src="../assets/img/seemore_workflow.png" alt="workflow">
+</div>
+
+<br>
 
 ## Credits
 
@@ -105,16 +133,49 @@ This software uses the following open source packages:
 - [Twilio](https://www.twilio.com/)
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/)
 
+<br>
+
+## Future Work
+
+Although the features we set out to build have been successfully implemented, the following areas can be improved in future versions of the app.
+
+- [x] Accuracy of detection models can be improved. We can use better and more efficient models trained on a wide variety of data to make it more robust.
+
+- [ ] Extend object detection to more classes. The current version of the app can detect up to 80 different everyday objects. Our goal is to extend this to most objects we come across.
+- [ ] Implement object detection in real-time instead of capturing image. This can drastically improve the “independence” of the visually impaired. At present, we send an image to the API and it returns the result. Our next goal is to allow the user to simply have the camera open while our app informs the person about objects detected at any time.
+
+<br>
+
 ## Contributors
 
 > - [A Nilavan](https://github.com/Nilavan)
+>   - Backend development
+>   - Object detection (v1 & v2)
+>   - Currency detection (v2)
 > - [Ajtih Manivannan](https://github.com/ajith-m-doodlebug)
+>   - Frontend development
 > - [N Lirajkhanna](https://github.com/N-liraj-khanna)
+>   - SOS feature
+>   - Currency detection (v1)
+>   - Backend deployment
 > - [TM Vishnu Mukundan](https://github.com/calicartels/)
+>   - Text detection (OCR)
+
+<br>
+
+## References
+
+1. [https://towardsdatascience.com/detecting-objects-in-flutter-4fe8cfccef14](https://towardsdatascience.com/detecting-objects-in-flutter-4fe8cfccef14)
+2. [https://pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/](https://pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/)
+3. [https://nanonets.com/blog/ocr-with-tesseract/](https://nanonets.com/blog/ocr-with-tesseract/)
+4. [https://www.twilio.com/blog/2016/10/how-to-send-an-sms-with-python-using-twilio.html](https://www.twilio.com/blog/2016/10/how-to-send-an-sms-with-python-using-twilio.html)
+5. [https://blog.logrocket.com/adding-speech-to-text-text-to-speech-support-flutter-app/](https://blog.logrocket.com/adding-speech-to-text-text-to-speech-support-flutter-app/)
+
+<br>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Nilavan/seemore/blob/main/LICENSE) file for details
 
 > [nilavan.github.io](https://www.nilavan.github.io) &nbsp;&middot;&nbsp;
 > GitHub [@Nilavan](https://github.com/Nilavan) &nbsp;&middot;&nbsp;
