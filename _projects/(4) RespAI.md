@@ -9,6 +9,10 @@ description: A web app to detect COVID-19 and Pneumonia from Chest X-Ray images 
 > ⚠ Disclaimer: This application is meant for educational purposes only and should not be used in a real-world context.
 ```
 
+<h1 align="center">
+  respAI <a href="https://github.com/Nilavan/respAI" class="btn btn-outline-success button-round sm" target="_blank"><i class='fab fa-github'></i> </a>
+</h1>
+
 ## Contents:
 
 1. [Background](#background)
@@ -23,8 +27,9 @@ description: A web app to detect COVID-19 and Pneumonia from Chest X-Ray images 
    4. [Probability](#probability)
    5. [Patient database](#db)
 4. [Architecture](#architecture)
-5. [Links](#links)
-6. [Team](#team)
+5. [Prototype](#prototype)
+6. [Links](#links)
+7. [Team](#team)
 
 <div class="m-3" id="background">
     <br />
@@ -128,6 +133,23 @@ L[Dense 3] --> M[Softmax]
 end
 A[Chest X-Ray] --> B & C --> layer1 --> layer2 --> layer3 --> layer4 --> Output
 </div>
+
+<div class="m-3" id="prototype">
+    <br />
+    <h2>🌟 Prototype:</h2>
+</div>
+
+#### Prediction
+
+<p align="center">
+<img src="../assets/img/respai2.png"/>
+</p><br>
+
+#### Verification
+
+<p align="center">
+<img src="../assets/img/respai3.png"/>
+</p><br>
 
 <div class="m-3" id="links">
     <br />
