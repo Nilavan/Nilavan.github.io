@@ -59,6 +59,25 @@ All the features are accessible via swipe/hold gestures and voice commands. Simp
 
 <br>
 
+#### ⭐️ Voice Commands
+
+<br>
+
+Press the mic button and use the command "Seemore" to activate. Then, use one of the following commands:
+
+- "SOS"
+- "detect object"
+- "currency"
+- "read text"
+
+to access the corresponding feature.
+
+The app uses the Speech-to-text package in flutter to recognize the user command.
+
+> Implemented by [@Ajith Manivannan](https://github.com/ajith-m-doodlebug)
+
+<br>
+
 #### ⭐️ SOS - Quickly send alerts to your emergency contacts.
 
 <br>
@@ -87,7 +106,7 @@ We use simple camera calibration to calculate the distance between the user and 
 
 <br>
 
-#### ⭐️ Currency Detection - Detects currecny denominations.
+#### ⭐️ Currency Detection - Detects currency denominations.
 
 <br>
 
@@ -140,7 +159,6 @@ This software uses the following open source packages:
 Although the features we set out to build have been successfully implemented, the following areas can be improved in future versions of the app.
 
 - [x] Accuracy of detection models can be improved. We can use better and more efficient models trained on a wide variety of data to make it more robust.
-
 - [ ] Extend object detection to more classes. The current version of the app can detect up to 80 different everyday objects. Our goal is to extend this to most objects we come across.
 - [ ] Implement object detection in real-time instead of capturing image. This can drastically improve the “independence” of the visually impaired. At present, we send an image to the API and it returns the result. Our next goal is to allow the user to simply have the camera open while our app informs the person about objects detected at any time.
 
@@ -152,8 +170,9 @@ Although the features we set out to build have been successfully implemented, th
 >   - Backend development
 >   - Object detection (v1 & v2)
 >   - Currency detection (v2)
-> - [Ajtih Manivannan](https://github.com/ajith-m-doodlebug)
+> - [Ajith Manivannan](https://github.com/ajith-m-doodlebug)
 >   - Frontend development
+>   - Speech-to-text & text-to-speech
 > - [N Lirajkhanna](https://github.com/N-liraj-khanna)
 >   - SOS feature
 >   - Currency detection (v1)
@@ -165,11 +184,11 @@ Although the features we set out to build have been successfully implemented, th
 
 ## References
 
-1. [https://towardsdatascience.com/detecting-objects-in-flutter-4fe8cfccef14](https://towardsdatascience.com/detecting-objects-in-flutter-4fe8cfccef14)
-2. [https://pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/](https://pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/)
-3. [https://nanonets.com/blog/ocr-with-tesseract/](https://nanonets.com/blog/ocr-with-tesseract/)
-4. [https://www.twilio.com/blog/2016/10/how-to-send-an-sms-with-python-using-twilio.html](https://www.twilio.com/blog/2016/10/how-to-send-an-sms-with-python-using-twilio.html)
-5. [https://blog.logrocket.com/adding-speech-to-text-text-to-speech-support-flutter-app/](https://blog.logrocket.com/adding-speech-to-text-text-to-speech-support-flutter-app/)
+1. [Detecting Objects in Flutter](https://towardsdatascience.com/detecting-objects-in-flutter-4fe8cfccef14)
+2. [Find distance from camera to object/marker using Python and OpenCV](https://pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/)
+3. [How to OCR with Tesseract, OpenCV and Python](https://nanonets.com/blog/ocr-with-tesseract/)
+4. [How to Send an SMS With Python Using Twilio](https://www.twilio.com/blog/2016/10/how-to-send-an-sms-with-python-using-twilio.html)
+5. [Adding speech-to-text and text-to-speech support in a Flutter app](https://blog.logrocket.com/adding-speech-to-text-text-to-speech-support-flutter-app/)
 
 <br>
 
